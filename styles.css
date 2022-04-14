@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(cutefood.JPG);
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white; 
+    padding: 2em;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.inner-container {
+    width: 800px;
+}
+
+
+img {
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 8px white inset;
+}
+
+iframe {
+    border: 4px solid black;
+    border-radius: 8px;
+    display: none
+}
+
+#whatsInFridge, #typeOfMeal, #cuisineType, #generate, #get-recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.container, .inner-container *, form *, select *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5em;
+}
+
+select, input, #search, option, #main-ingredient {
+    width: 175px;
+    height: 30px;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+
+button, #dropdownsubmit {
+    background-color: black;
+    color: white;
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+#bottom-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none
+}
+
+#myList {
+    list-style: none;
+    padding: 0;
+}
